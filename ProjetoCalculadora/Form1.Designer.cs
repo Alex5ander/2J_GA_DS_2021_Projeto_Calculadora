@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.pnTopo = new System.Windows.Forms.Panel();
-            this.pnCentral = new System.Windows.Forms.Panel();
-            this.lbDisplay = new System.Windows.Forms.Label();
-            this.pnOperadores = new System.Windows.Forms.Panel();
             this.pnFunc = new System.Windows.Forms.Panel();
+            this.lbDisplay = new System.Windows.Forms.Label();
+            this.pnCentral = new System.Windows.Forms.Panel();
+            this.pnOperadores = new System.Windows.Forms.Panel();
             this.pnTopo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,14 +48,13 @@
             this.pnTopo.Size = new System.Drawing.Size(434, 111);
             this.pnTopo.TabIndex = 0;
             // 
-            // pnCentral
+            // pnFunc
             // 
-            this.pnCentral.BackColor = System.Drawing.Color.Silver;
-            this.pnCentral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnCentral.Location = new System.Drawing.Point(0, 111);
-            this.pnCentral.Name = "pnCentral";
-            this.pnCentral.Size = new System.Drawing.Size(337, 650);
-            this.pnCentral.TabIndex = 1;
+            this.pnFunc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnFunc.Location = new System.Drawing.Point(0, 47);
+            this.pnFunc.Name = "pnFunc";
+            this.pnFunc.Size = new System.Drawing.Size(434, 64);
+            this.pnFunc.TabIndex = 1;
             // 
             // lbDisplay
             // 
@@ -69,22 +68,23 @@
             this.lbDisplay.Text = "0";
             this.lbDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // pnCentral
+            // 
+            this.pnCentral.BackColor = System.Drawing.Color.Silver;
+            this.pnCentral.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnCentral.Location = new System.Drawing.Point(0, 111);
+            this.pnCentral.Name = "pnCentral";
+            this.pnCentral.Size = new System.Drawing.Size(324, 650);
+            this.pnCentral.TabIndex = 1;
+            // 
             // pnOperadores
             // 
             this.pnOperadores.BackColor = System.Drawing.Color.Silver;
             this.pnOperadores.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnOperadores.Location = new System.Drawing.Point(337, 111);
+            this.pnOperadores.Location = new System.Drawing.Point(324, 111);
             this.pnOperadores.Name = "pnOperadores";
-            this.pnOperadores.Size = new System.Drawing.Size(97, 650);
+            this.pnOperadores.Size = new System.Drawing.Size(110, 650);
             this.pnOperadores.TabIndex = 2;
-            // 
-            // pnFunc
-            // 
-            this.pnFunc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnFunc.Location = new System.Drawing.Point(0, 47);
-            this.pnFunc.Name = "pnFunc";
-            this.pnFunc.Size = new System.Drawing.Size(434, 64);
-            this.pnFunc.TabIndex = 1;
             // 
             // Form1
             // 
@@ -96,7 +96,7 @@
             this.Controls.Add(this.pnTopo);
             this.Font = new System.Drawing.Font("Quartz MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";

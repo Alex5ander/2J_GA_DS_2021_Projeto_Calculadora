@@ -12,6 +12,7 @@ namespace ProjetoCalculadora
 {
     public partial class Form1 : Form
     {
+        Calculadora calculadora;
         public string[] operacoes = { "/", "x", "-", "+", "=" };
         public Form1()
         {
@@ -19,7 +20,7 @@ namespace ProjetoCalculadora
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            Calculadora calculadora = new Calculadora();
+            calculadora = new Calculadora();
             int size = Math.Min(pnCentral.Width, pnCentral.Height) / 3;
             int left = 0;
             int top = 0;
