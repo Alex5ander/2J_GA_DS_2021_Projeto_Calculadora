@@ -19,6 +19,7 @@ namespace ProjetoCalculadora
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            Calculadora calculadora = new Calculadora();
             int size = Math.Min(pnCentral.Width, pnCentral.Height) / 3;
             int left = 0;
             int top = 0;
@@ -36,15 +37,13 @@ namespace ProjetoCalculadora
                     left = 0;
                     top += size; 
                 }
-
                 button.Left = left;
                 if(i == 9) {
                     button.Left = size * 1;
                 }
                 button.Top = top;
-
                 left += size;
-                
+                //button.Click = calculadora.setDigito;
                 pnCentral.Controls.Add(button);
             }
    

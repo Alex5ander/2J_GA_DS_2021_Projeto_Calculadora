@@ -32,38 +32,39 @@
             this.pnCentral = new System.Windows.Forms.Panel();
             this.lbDisplay = new System.Windows.Forms.Label();
             this.pnOperadores = new System.Windows.Forms.Panel();
+            this.pnFunc = new System.Windows.Forms.Panel();
             this.pnTopo.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnTopo
             // 
             this.pnTopo.BackColor = System.Drawing.Color.Silver;
+            this.pnTopo.Controls.Add(this.pnFunc);
             this.pnTopo.Controls.Add(this.lbDisplay);
             this.pnTopo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnTopo.Location = new System.Drawing.Point(0, 0);
             this.pnTopo.Margin = new System.Windows.Forms.Padding(0);
             this.pnTopo.Name = "pnTopo";
-            this.pnTopo.Padding = new System.Windows.Forms.Padding(8);
-            this.pnTopo.Size = new System.Drawing.Size(434, 84);
+            this.pnTopo.Size = new System.Drawing.Size(434, 111);
             this.pnTopo.TabIndex = 0;
             // 
             // pnCentral
             // 
             this.pnCentral.BackColor = System.Drawing.Color.Silver;
             this.pnCentral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnCentral.Location = new System.Drawing.Point(0, 84);
+            this.pnCentral.Location = new System.Drawing.Point(0, 111);
             this.pnCentral.Name = "pnCentral";
-            this.pnCentral.Size = new System.Drawing.Size(321, 677);
+            this.pnCentral.Size = new System.Drawing.Size(337, 650);
             this.pnCentral.TabIndex = 1;
             // 
             // lbDisplay
             // 
             this.lbDisplay.BackColor = System.Drawing.Color.Gainsboro;
-            this.lbDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbDisplay.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbDisplay.Font = new System.Drawing.Font("Quartz MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDisplay.Location = new System.Drawing.Point(8, 8);
+            this.lbDisplay.Location = new System.Drawing.Point(0, 0);
             this.lbDisplay.Name = "lbDisplay";
-            this.lbDisplay.Size = new System.Drawing.Size(418, 68);
+            this.lbDisplay.Size = new System.Drawing.Size(434, 47);
             this.lbDisplay.TabIndex = 0;
             this.lbDisplay.Text = "0";
             this.lbDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -72,10 +73,18 @@
             // 
             this.pnOperadores.BackColor = System.Drawing.Color.Silver;
             this.pnOperadores.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnOperadores.Location = new System.Drawing.Point(321, 84);
+            this.pnOperadores.Location = new System.Drawing.Point(337, 111);
             this.pnOperadores.Name = "pnOperadores";
-            this.pnOperadores.Size = new System.Drawing.Size(113, 677);
+            this.pnOperadores.Size = new System.Drawing.Size(97, 650);
             this.pnOperadores.TabIndex = 2;
+            // 
+            // pnFunc
+            // 
+            this.pnFunc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnFunc.Location = new System.Drawing.Point(0, 47);
+            this.pnFunc.Name = "pnFunc";
+            this.pnFunc.Size = new System.Drawing.Size(434, 64);
+            this.pnFunc.TabIndex = 1;
             // 
             // Form1
             // 
@@ -106,6 +115,7 @@
         private System.Windows.Forms.Label lbDisplay;
         private System.Windows.Forms.Panel pnCentral;
         private System.Windows.Forms.Panel pnOperadores;
+        private System.Windows.Forms.Panel pnFunc;
     }
 }
 
