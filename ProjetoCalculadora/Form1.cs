@@ -18,6 +18,10 @@ namespace ProjetoCalculadora
         {
             InitializeComponent();
         }
+        public void setDigito(object sender, EventArgs e)
+        {
+            calculadora.setDigito("a");
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             calculadora = new Calculadora();
@@ -44,7 +48,8 @@ namespace ProjetoCalculadora
                 }
                 button.Top = top;
                 left += size;
-                //button.Click = calculadora.setDigito;
+
+                button.Click += setDigito;
                 pnCentral.Controls.Add(button);
             }
    
