@@ -12,11 +12,11 @@ namespace ProjetoCalculadora
 {
     public partial class Form1 : Form
     {
+        public string[] operacoes = { "/", "x", "-", "+", "=" };
         public Form1()
         {
             InitializeComponent();
         }
-        //btnCalcular
         private void Form1_Load(object sender, EventArgs e)
         {
             int size = Math.Min(pnCentral.Width, pnCentral.Height) / 3;
@@ -30,7 +30,6 @@ namespace ProjetoCalculadora
                 button.Width = size;
                 button.Height = size;
                 button.BackColor = Color.White;
-                button.Cursor = "Hand";
 
                 if (i % 3 == 0 && i != 0)
                 {
@@ -39,11 +38,26 @@ namespace ProjetoCalculadora
                 }
 
                 button.Left = left;
+                if(i == 9) {
+                    button.Left = size * 1;
+                }
                 button.Top = top;
 
                 left += size;
                 
                 pnCentral.Controls.Add(button);
+            }
+   
+            for (int i = 0; i < operacoes.Count(); i++)
+            {
+                Button button = new Button();
+                button.Text = operacoes[i];
+                button.Name = "btn" + operacoes[i];
+                button.Width = size;
+                button.Height = size;
+                button.BackColor = Color.White;
+                button.Top = size * i;
+                pnOperadores.Controls.Add(button);
             }
         }
     }

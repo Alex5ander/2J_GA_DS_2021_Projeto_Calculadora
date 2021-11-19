@@ -31,7 +31,7 @@
             this.pnTopo = new System.Windows.Forms.Panel();
             this.pnCentral = new System.Windows.Forms.Panel();
             this.lbDisplay = new System.Windows.Forms.Label();
-            this.pn = new System.Windows.Forms.Panel();
+            this.pnOperadores = new System.Windows.Forms.Panel();
             this.pnTopo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,21 +68,21 @@
             this.lbDisplay.Text = "0";
             this.lbDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // pn
+            // pnOperadores
             // 
-            this.pn.BackColor = System.Drawing.Color.Silver;
-            this.pn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn.Location = new System.Drawing.Point(321, 84);
-            this.pn.Name = "pn";
-            this.pn.Size = new System.Drawing.Size(113, 677);
-            this.pn.TabIndex = 2;
+            this.pnOperadores.BackColor = System.Drawing.Color.Silver;
+            this.pnOperadores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnOperadores.Location = new System.Drawing.Point(321, 84);
+            this.pnOperadores.Name = "pnOperadores";
+            this.pnOperadores.Size = new System.Drawing.Size(113, 677);
+            this.pnOperadores.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 761);
-            this.Controls.Add(this.pn);
+            this.Controls.Add(this.pnOperadores);
             this.Controls.Add(this.pnCentral);
             this.Controls.Add(this.pnTopo);
             this.Font = new System.Drawing.Font("Quartz MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -105,7 +105,7 @@
         private System.Windows.Forms.Panel pnTopo;
         private System.Windows.Forms.Label lbDisplay;
         private System.Windows.Forms.Panel pnCentral;
-        private System.Windows.Forms.Panel pn;
+        private System.Windows.Forms.Panel pnOperadores;
     }
 }
 
