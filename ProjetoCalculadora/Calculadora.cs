@@ -59,5 +59,17 @@ namespace ProjetoCalculadora
             double num = Double.Parse(Visor);
             Visor = (num * -1).ToString();
         }
+
+        public void fracao()
+        {
+            double num = Double.Parse(Visor);
+            Visor = (1 / num).ToString();
+        }
+
+        public void raiz()
+        {
+            double num = Double.Parse(Visor);
+            Visor = (Math.Sqrt(num)).ToString();
+        }
     }
 }

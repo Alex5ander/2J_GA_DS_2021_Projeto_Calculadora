@@ -132,5 +132,17 @@ namespace ProjetoCalculadora
             calculadora.inverter();
             lbVisor.Text = calculadora.Visor;
         }
+
+        private void btnFracao_Click(object sender, EventArgs e)
+        {
+            calculadora.fracao();
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btnRaiz_Click(object sender, EventArgs e)
+        {
+            calculadora.raiz();
+            lbVisor.Text = calculadora.Visor;
+        }
     }
 }
