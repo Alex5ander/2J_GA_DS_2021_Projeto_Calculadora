@@ -18,52 +18,119 @@ namespace ProjetoCalculadora
         {
             InitializeComponent();
         }
-        public void setDigito(object sender, EventArgs e)
+        public void setDigito(string digito)
         {
-            calculadora.setDigito("a");
+            
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             calculadora = new Calculadora();
-            int size = Math.Min(pnCentral.Width, pnCentral.Height) / 3;
-            int left = 0;
-            int top = 0;
-            for (int i = 0; i < 10; i++)
-            {
-                Button button = new Button();
-                button.Text = (9 - i).ToString();
-                button.Name = "btn" + (9 - i).ToString();
-                button.Width = size;
-                button.Height = size;
-                button.BackColor = Color.White;
+            
+        }
 
-                if (i % 3 == 0 && i != 0)
-                {
-                    left = 0;
-                    top += size; 
-                }
-                button.Left = left;
-                if(i == 9) {
-                    button.Left = size * 1;
-                }
-                button.Top = top;
-                left += size;
+        private void btnSoma_Click(object sender, EventArgs e)
+        {
+            calculadora.Op = "+";
+        }
 
-                button.Click += setDigito;
-                pnCentral.Controls.Add(button);
-            }
-   
-            for (int i = 0; i < operacoes.Count(); i++)
-            {
-                Button button = new Button();
-                button.Text = operacoes[i];
-                button.Name = "btn" + operacoes[i];
-                button.Width = size;
-                button.Height = size;
-                button.BackColor = Color.White;
-                button.Top = size * i;
-                pnOperadores.Controls.Add(button);
-            }
+        private void btnSub_Click(object sender, EventArgs e)
+        {
+            calculadora.Op = "-";
+        }
+
+        private void btnMult_Click(object sender, EventArgs e)
+        {
+            calculadora.Op = "x";
+        }
+
+        private void btnDiv_Click(object sender, EventArgs e)
+        {
+            calculadora.Op = "/";
+        }
+
+        private void btnIgual_Click(object sender, EventArgs e)
+        {
+            calculadora.calcular();
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btnC_Click(object sender, EventArgs e)
+        {
+            calculadora.Visor = "0";
+            lbVisor.Text = "0";
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            calculadora.setDigito("1");
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            calculadora.setDigito("2");
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btnBackSpace_Click(object sender, EventArgs e)
+        {
+            calculadora.backspace();
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            calculadora.setDigito("3");
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            calculadora.setDigito("4");
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            calculadora.setDigito("5");
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            calculadora.setDigito("6");
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            calculadora.setDigito("7");
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            calculadora.setDigito("8");
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            calculadora.setDigito("9");
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            calculadora.setDigito("0");
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btnInverter_Click(object sender, EventArgs e)
+        {
+            calculadora.inverter();
+            lbVisor.Text = calculadora.Visor;
         }
     }
 }
