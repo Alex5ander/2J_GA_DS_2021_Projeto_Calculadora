@@ -57,6 +57,7 @@ namespace ProjetoCalculadora
         private void btnC_Click(object sender, EventArgs e)
         {
             calculadora.Visor = "0";
+            calculadora.Op = "";
             lbVisor.Text = "0";
             lbVisor.Text = calculadora.Visor;
         }
@@ -142,6 +143,17 @@ namespace ProjetoCalculadora
         private void btnRaiz_Click(object sender, EventArgs e)
         {
             calculadora.raiz();
+            lbVisor.Text = calculadora.Visor;
+        }
+
+        private void btnPonto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPotencia_Click(object sender, EventArgs e)
+        {
+            calculadora.potencia();
             lbVisor.Text = calculadora.Visor;
         }
     }

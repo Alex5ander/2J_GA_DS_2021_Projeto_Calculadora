@@ -71,5 +71,11 @@ namespace ProjetoCalculadora
             double num = Double.Parse(Visor);
             Visor = (Math.Sqrt(num)).ToString();
         }
+
+        public void potencia()
+        {
+            double num = Double.Parse(Visor);
+            Visor = (num * num).ToString();
+        }
     }
 }
